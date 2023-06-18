@@ -12,7 +12,7 @@ A prototype of a platform fighter based on Rivals of Aether/Super Smash Bros. Me
 - adjust player movement params to a default that works
 - create semi-solid platforms
 
-## NEAR - FUTURE TODO:
+## NEAR-FUTURE TODO:
 
 - Animation system (god help me)
 - Hitbox system that is modular enough to be adjusted on the fly (god help me)
@@ -20,7 +20,7 @@ A prototype of a platform fighter based on Rivals of Aether/Super Smash Bros. Me
 - Hurtbox system
 - Projectile system
 
-## FAR - FUTURE TODO
+## FAR-FUTURE TODO
 
 - Spriting (god help me)
 - Stage design
