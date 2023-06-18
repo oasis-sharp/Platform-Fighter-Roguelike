@@ -25,6 +25,7 @@
     {"id":{"name":"create_smoke_walk","path":"scripts/create_smoke_walk/create_smoke_walk.yy",},"order":1,},
     {"id":{"name":"array_scripts","path":"scripts/array_scripts/array_scripts.yy",},"order":1,},
     {"id":{"name":"idle","path":"sprites/idle/idle.yy",},"order":0,},
+    {"id":{"name":"animation","path":"scripts/animation/animation.yy",},"order":5,},
     {"id":{"name":"plat_obj","path":"objects/plat_obj/plat_obj.yy",},"order":2,},
     {"id":{"name":"test_room","path":"rooms/test_room/test_room.yy",},"order":0,},
   ],
