@@ -16,7 +16,7 @@ A prototype of a platform fighter based on Rivals of Aether/Super Smash Bros. Me
 
 - Animation system (god help me)
 - Hitbox system that is modular enough to be adjusted on the fly (god help me)
-  - this system will strongly be based on Smash Ultimate's system of creating hitbox objects functionally and assigning params all in one go
+  - This system will strongly be based on Smash Ultimate's system of creating hitbox objects functionally and assigning params all in one go
 - Hurtbox system
 - Projectile system
 
