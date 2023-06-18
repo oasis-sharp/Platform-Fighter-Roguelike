@@ -16,6 +16,7 @@ function fetch_inputs(){ // fetches inputs being made on current frame
 	
 }
 
+
 function set_controls(){
 		
 	right = ord("D");
@@ -26,6 +27,5 @@ function set_controls(){
 	jump = vk_space;
 	normal = ord("P");
 	dash = ord("L");
-
 
 }

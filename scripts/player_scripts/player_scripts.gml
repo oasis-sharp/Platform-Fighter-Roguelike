@@ -83,6 +83,7 @@ function walljump(){
 	}		
 }
 
+
 function horizontal_movement(){
 	
 	// Calculate the horizontal movement
@@ -100,12 +101,9 @@ function horizontal_movement(){
 				hsp = move * walksp;
 			}
 		}
-		
-		
 	}
-	// If the player is not grounded
+	
 	else{ 
-		
 		// If the player is holding a direction and is not grounded
 		if(find_in_array(STATE, array_length(STATE), "grounded") == -4 and move!=0){
 			hsp+=air_accel*move;
