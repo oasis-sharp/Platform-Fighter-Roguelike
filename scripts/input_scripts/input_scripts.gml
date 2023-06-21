@@ -11,6 +11,8 @@ function fetch_inputs(){ // fetches inputs being made on current frame
 	normalPressed = keyboard_check_pressed(normal);
 	dashPressed = keyboard_check_pressed(dash);
 	
+	platDrop = keyboard_check_pressed(down)*keyboard_check(modifier);
+	
 	var inputs = [rightHeld, leftHeld, jumpHeld, downHeld, upHeld, downPressed, jumpPressed, normalPressed];
 	return inputs;
 	
@@ -23,6 +25,8 @@ function set_controls(){
 	left = ord("A");
 	down = ord("S");
 	up = ord("W");
+	
+	modifier = ord("K");
 	
 	jump = vk_space;
 	normal = ord("P");

@@ -1,11 +1,11 @@
 function brawler_init(){
 	
-	max_ground_hsp = 6;
+	max_ground_hsp = 7;
 	max_air_hsp = 7;
 	max_air_vsp = 15;
 	max_air_vsp_ff = 30;
 
-	walksp = 7;
+	walksp = 7.4;
 	jump_height = -15;
 	jump_height_s = -11;
 	jumpsquat_frames = 4;
@@ -15,9 +15,9 @@ function brawler_init(){
 	
 	airdash_sp = 8;
 	wavedash_speed = 12;
-	wavedash_time = 8;
+	wavedash_time = 11;
 	
-	air_accel = 0.64;
+	air_accel = 0.55;
 	air_deccel_mul = 0.8;
 	air_deccel_mul_max = 0.96;
 	grav = 0.8;

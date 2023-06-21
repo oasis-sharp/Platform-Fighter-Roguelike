@@ -21,45 +21,9 @@ function player_script(){
 	wavedash();
 
 	walljump();
-	check_collision();
 	
-	animation();
-	
-	x = x + hsp;
-	y = y + vsp;
 }
 
-
-function check_collision(){
-	
-	var px = sign(hsp);
-	x = round(x);
-	y = round(y);
-	
-	if (place_meeting(x+hsp,y,block_par))
-	{
-		// Player is colliding with a block, so adjust position to resolve the collision
-		while (!place_meeting(x+px,y,block_par))
-		{
-			x = x + px;
-	    }
-		
-	    hsp = 0;	
-	}
-	
-	var px = sign(vsp);
-	
-	if (place_meeting(x,y+vsp,block_par))
-	{
-		// Player is colliding with a block, so adjust position to resolve the collision
-	    while (!place_meeting(x,y+px,block_par))
-	    {
-	        y = y + px;
-	    }
-
-	    vsp = 0;
-	}
-}
 
 function walljump(){
 	
@@ -92,14 +56,10 @@ function horizontal_movement(){
 	// If the player is holding a direction and is grounded
 	if(move != 0 and find_in_array(STATE,array_length(STATE), "grounded") != -4 && !(wavedashf > 0)){
 		if(move = 1){
-			if(hsp < walksp){
-				hsp = move * walksp;
-			}
+			hsp = move * walksp;
 		}
 		else{
-			if(hsp > -walksp){
-				hsp = move * walksp;
-			}
+			hsp = move * walksp;
 		}
 	}
 	

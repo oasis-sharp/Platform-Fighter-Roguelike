@@ -15,7 +15,7 @@ STATE = []
 hsp = 0;
 vsp = 0;
 
-jsquatf = 0;
+jsquatf = -1;
 
 wavedashf = 0;
 
@@ -23,6 +23,12 @@ scale=4;
 
 image_xscale = scale;
 image_yscale = scale;
+
+ECBID = instance_create_layer(x,y, "Instances", platECB_obj); 
+
+with ECBID {
+	owner = other.id	
+}
 
 
 // ATTRIBUTES
