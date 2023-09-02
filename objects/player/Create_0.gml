@@ -8,6 +8,8 @@
 
 // i cant code for shit bruh
 
+// FUCK MY LIFE
+
 // GAMEPLAY
 
 STATE = []
@@ -18,6 +20,7 @@ vsp = 0;
 jsquatf = -1;
 
 wavedashf = 0;
+initialf = 0;
 
 scale=4;
 

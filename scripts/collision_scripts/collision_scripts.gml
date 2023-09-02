@@ -24,21 +24,39 @@ function check_collision(){
 	    {
 	        y = y + px;
 	    }
-
-	    vsp = 0;
+		
+		// Create landing particles
+		if(vsp > 2){
+			create_smoke(abs(vsp)*5);
+		}
+		
+		vsp = 0;
+		add_to_array(STATE, "grounded");
+		
 	}
 	
 	
-	if (place_meeting(x,y,plat_obj))
+	if (place_meeting(x,y+vsp,plat_obj))
 	{
-		if(vsp > 0) && !platDrop {
+		
+		var plat = instance_place(x, y+vsp, plat_obj);
+		
+		if(vsp >= 0) && !platDrop && plat.y >= y {
 	
 		    while (!place_meeting(x,y+px,plat_obj))
 		    {
 		        y = y + px;
 		    }
-
-		    vsp = 0;
+			
+			// Create landing particles
+			if(vsp > 2){
+				create_smoke(abs(vsp)*5);
+			}
+			
+			vsp = 0;
+			add_to_array(STATE, "grounded");
+			fastFallBuffer = 2;
+		
 		}
 	}
 	

@@ -5,7 +5,8 @@ function brawler_init(){
 	max_air_vsp = 15;
 	max_air_vsp_ff = 30;
 
-	walksp = 7.4;
+	walksp = 7.8;
+	slowwalksp = 3.5;
 	jump_height = -15;
 	jump_height_s = -11;
 	jumpsquat_frames = 4;
@@ -25,7 +26,7 @@ function brawler_init(){
 	grav_add = 0.4;
 	grav_ff_add = 2.0;
 	
-	fric = 0.9;
+	fric = 0.87;
 	wallslide_f = 1.3;
 	wallslide_s = 4;
 	

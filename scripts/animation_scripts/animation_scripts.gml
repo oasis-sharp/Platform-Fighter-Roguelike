@@ -14,14 +14,10 @@ function animation(){
 		}
 		sprite_index = walk;
 		image_speed = 0.4;
-		add_to_array(STATE, "walking");
-		delete_from_array(STATE, "idle");
 	}
 	// Set the sprite to the idle sprite if the player is not holding a direction
 	else{
 		sprite_index = idle;
-		delete_from_array(STATE, "walking");
-		add_to_array(STATE, "idle");
 	}
 	
 
